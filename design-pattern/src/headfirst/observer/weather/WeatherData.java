@@ -41,8 +41,6 @@ public class WeatherData implements Subject {
 		measurementsChanged();
 	}
 	
-	// other WeatherData methods here
-	
 	public float getTemperature() {
 		return temperature;
 	}
