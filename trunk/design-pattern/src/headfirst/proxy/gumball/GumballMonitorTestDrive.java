@@ -8,9 +8,17 @@ public class GumballMonitorTestDrive {
 		String[] location = {"rmi://santafe.mightygumball.com/gumballmachine",
 		                     "rmi://boulder.mightygumball.com/gumballmachine",
 		                     "rmi://seattle.mightygumball.com/gumballmachine"}; 
- 
+		
+		if (args.length >= 0)
+        {
+            location = new String[1];
+            location[0] = "rmi://" + args[0] + "/gumballmachine";
+        }
+		
 		GumballMonitor[] monitor = new GumballMonitor[location.length];
- 
+		
+		
+		
 		for (int i=0;i < location.length; i++) {
 			try {
            		GumballMachineRemote machine = 
