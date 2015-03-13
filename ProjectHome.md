@@ -1,0 +1,1 @@
+examples of design pattern in Java,just for learning purpose.
